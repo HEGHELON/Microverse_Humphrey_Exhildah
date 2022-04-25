@@ -4,9 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Microverse-Survey-Form</title>
   </head>
   <body>
-    <h1>Hello World, we are software developers!</h1>
+    <div id="wrapper">
+      <h1 id="title">Microverse Survey Form</h1>
+      <p id="description">
+        Fill in the form to share your feedback on the Microverse aplication
+        process
+      </p>
+      <form id="survey-form" action="">
+        <div class="form_group">
+          <label for="name" id="name-label"> Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Name"
+            required
+          />
+        </div>
+        <div class="form_group">
+          <label for="email" id="email-label"> Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+        <div class="form_group">
+          <label for="number" id="number-label"> Number</label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Enter Number"
+            min="1"
+            max="1000"
+            required
+          />
+        </div>
+        <div class="form_group">
+          <label for="dropdown"> Continent</label>
+          <select name="dropdown" id="dropdown">
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="antarctica">Antarctica</option>
+            <option value="europe">Europe</option>
+            <option value="north_america">North-America</option>
+            <option value="south_america">South-America</option>
+          </select>
+        </div>
+        <h3>Gender</h3>
+        <div class="box_group">
+          <input type="radio" name="gender" value="male" id="gender_male" />
+          <label for="gender_male"> Male</label>
+        </div>
+        <div class="box_group">
+          <input type="radio" name="gender" value="female" id="gender_female" />
+          <label for="gender_female"> Female</label>
+        </div>
+        <h3>Perequisite</h3>
+        <div class="box_group">
+          <input type="checkbox" name="perequisite" id="html" value="html" />
+          <label for="html"> Html</label>
+        </div>
+        <div class="box_group">
+          <input type="checkbox" name="perequisite" id="css" value="css" />
+          <label for="css"> Css</label>
+        </div>
+        <div class="box_group">
+          <input
+            type="checkbox"
+            name="perequite"
+            id="javascript"
+            value="javascript"
+          />
+          <label for="Javascript" name="perequisite"> Javascript</label>
+        </div>
+        <div class="form_group">
+          <label for="textarea"
+            >Tell us why you prefare the Microverse program</label
+          >
+        </div>
+        <div class="form_group">
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="20"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="form_group">
+          <button type="submit" id="submit" name="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
